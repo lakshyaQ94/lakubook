@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Quantity Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section services="calculator">
+        <div class="calculator">
+        <h4>Calculate your price for bulk order</h4>
+            <div class="input-group">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" min="0" value="0">
+            </div>
+            <div class="input-group">
+              <label for="price">Price per item:</label>
+              <input type="number" id="price" min="0" step="0.01" value="0.00">
+            </div>
+            <div class="input-group">
+              <label for="discount">Discount (%):</label>
+              <input type="number" id="discount" min="0" step="0.01" value="0.00">
+            </div>
+            <button class="btn-calc" onclick="calculateTotal()">Calculate Total</button>
+            <div class="output-group">
+              <p>Total Cost:</p>
+              <span id="total">₹0.00</span>
+            </div>
+        </div>
+        </section> 
+</body>
+</html>
